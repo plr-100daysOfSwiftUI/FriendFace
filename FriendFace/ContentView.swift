@@ -18,12 +18,16 @@ struct ContentView: View {
 				List {
 					ForEach(self.users, id: \.self) { user in
 						NavigationLink(destination: Text("\(user.name)")) {
-							Text("\(user.name)")
+							HStack {
+								Text("\(user.name)")
+								Text("\(user.friends.count) Friends")
+									.foregroundColor(.secondary)
+							}
 						}
 					}
 				}
 			}
-		.navigationBarTitle("Friend Face")
+			.navigationBarTitle("Friend Face")
 			.navigationBarItems(trailing: Button("Load") {
 				self.loadData()
 			})
@@ -46,7 +50,7 @@ struct ContentView: View {
 			
 		}
 		.resume()
-
+		
 	}
 }
 
