@@ -26,8 +26,11 @@ struct UserDetailView: View {
 	}
 }
 
+
 struct UserDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserDetailView()
-    }
+	static var previews: some View {
+		// TODO: Provide a User to preview
+		//		UserDetailView()
+		Text("Hallo World!")
+	}
 }
