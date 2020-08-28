@@ -15,12 +15,22 @@ struct UserDetailView: View {
 	var body: some View {
 		
 		VStack	{
-			Text("\(user.name)")
-				.font(.largeTitle)
-			Text("\(user.age)")
-				.font(.headline)
-			Text("\(user.company)")
-				.font(.headline)
+			
+			Group {
+				Text("\(user.name)")
+					.font(.largeTitle)
+				Text("\(user.age)")
+					.font(.headline)
+				Text("\(user.company)")
+					.font(.headline)
+			}
+			
+			List {
+				ForEach(user.friends, id: \.self) { friend in
+					Text("\(friend.name)")
+				}
+			}
+			
 		}
 		.padding()
 	}
