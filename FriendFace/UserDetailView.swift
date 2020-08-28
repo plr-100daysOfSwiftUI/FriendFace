@@ -22,7 +22,7 @@ struct UserDetailView: View {
 			Text("\(user.company)")
 				.font(.headline)
 		}
-	.padding()
+		.padding()
 	}
 }
 
