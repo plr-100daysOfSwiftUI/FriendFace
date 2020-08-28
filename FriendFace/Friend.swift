@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct Friend {
+struct Friend: Codable {
 	var id: UUID
 	var name: String
 }
