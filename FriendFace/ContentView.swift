@@ -14,12 +14,16 @@ struct ContentView: View {
 	
 	var body: some View {
 		VStack {
-			Text("Users: \(users.count)")
-				.padding()
+			List {
+				ForEach(self.users, id: \.self) { user in
+					Text("\(user.name)")
+				}
+			}
 			
 			Button("Load Data") {
 				self.loadData()
 			}
+			.padding()
 		}
 	}
 	
