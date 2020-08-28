@@ -9,10 +9,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
+	
 	@State private var users = [User]()
+	
+	var body: some View {
+		VStack {
+			Text("Users: \(users.count)")
+				.padding()
+			
+			Button("Load Data") {
+				self.loadData()
+			}
+		}
+	}
+	
 	func loadData() {
 		let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json")!
 		let request = URLRequest(url: url)
@@ -34,7 +44,7 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	static var previews: some View {
+		ContentView()
+	}
 }
