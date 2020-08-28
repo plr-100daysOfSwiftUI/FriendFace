@@ -13,17 +13,20 @@ struct ContentView: View {
 	@State private var users = [User]()
 	
 	var body: some View {
-		VStack {
-			List {
-				ForEach(self.users, id: \.self) { user in
-					Text("\(user.name)")
+		NavigationView {
+			VStack {
+				List {
+					ForEach(self.users, id: \.self) { user in
+						NavigationLink(destination: Text("\(user.name)")) {
+							Text("\(user.name)")
+						}
+					}
 				}
 			}
-			
-			Button("Load Data") {
+		.navigationBarTitle("Friend Face")
+			.navigationBarItems(trailing: Button("Load") {
 				self.loadData()
-			}
-			.padding()
+			})
 		}
 	}
 	
