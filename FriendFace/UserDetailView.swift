@@ -19,20 +19,25 @@ struct UserDetailView: View {
 			Group {
 				Text("\(user.name)")
 					.font(.largeTitle)
-				Text("\(user.age)")
-					.font(.headline)
-				Text("\(user.company)")
+				Text("Aged \(user.age), works for \(user.company)")
 					.font(.headline)
 			}
+			.padding()
 			
-			List {
-				ForEach(user.friends, id: \.self) { friend in
-					Text("\(friend.name)")
+			Section(header: Text("\(user.friends.count) friends")) {
+				List {
+					ForEach(user.friends, id: \.self) { friend in
+						Text("\(friend.name)")
+					}
 				}
 			}
 			
+			
+			Spacer()
+			
 		}
 		.padding()
+		
 	}
 }
 
