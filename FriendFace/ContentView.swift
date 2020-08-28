@@ -17,7 +17,7 @@ struct ContentView: View {
 			VStack {
 				List {
 					ForEach(self.users, id: \.self) { user in
-						NavigationLink(destination: Text("\(user.name)")) {
+						NavigationLink(destination: UserDetailView(user: user)) {
 							HStack {
 								Text("\(user.name)")
 								Text("\(user.friends.count) Friends")
