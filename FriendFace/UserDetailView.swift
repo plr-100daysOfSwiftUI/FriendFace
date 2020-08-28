@@ -9,9 +9,21 @@
 import SwiftUI
 
 struct UserDetailView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+	
+	let user: User
+	
+	var body: some View {
+		
+		VStack	{
+			Text("\(user.name)")
+				.font(.largeTitle)
+			Text("\(user.age)")
+				.font(.headline)
+			Text("\(user.company)")
+				.font(.headline)
+		}
+	.padding()
+	}
 }
 
 struct UserDetailView_Previews: PreviewProvider {
