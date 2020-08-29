@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+	@Environment(\.managedObjectContext) var moc
 	
 	@State private var users = [User]()
 	
