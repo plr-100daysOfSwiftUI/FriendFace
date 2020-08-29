@@ -47,6 +47,12 @@ struct ContentView: View {
 			let decoder = JSONDecoder()
 			if let decodedData = try? decoder.decode([User].self, from: data) {
 				self.users.append(contentsOf: decodedData)
+				
+				// load into Core Data
+				
+				if self.moc.hasChanges {
+					try? self.moc.save()
+				}
 			}
 			
 		}
