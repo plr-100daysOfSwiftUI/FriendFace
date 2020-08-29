@@ -17,17 +17,17 @@ struct UserDetailView: View {
 		VStack	{
 			
 			Group {
-				Text("\(user.name)")
+				Text("\(user.wrappedName)")
 					.font(.largeTitle)
-				Text("Aged \(user.age), works for \(user.company)")
+				Text("Aged \(user.age), works for \(user.wrappedCompany)")
 					.font(.headline)
 			}
 			.padding()
 			
-			Section(header: Text("\(user.friends.count) friends")) {
+			Section(header: Text("\(user.wrappedFriends.count) friends")) {
 				List {
-					ForEach(user.friends, id: \.self) { friend in
-						Text("\(friend.name)")
+					ForEach(Array(user.wrappedFriends), id: \.self) { friend in
+						Text("\(friend.wrappedName)")
 					}
 				}
 			}

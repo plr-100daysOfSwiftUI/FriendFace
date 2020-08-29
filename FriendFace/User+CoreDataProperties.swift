@@ -47,3 +47,17 @@ extension User {
     @NSManaged public func removeFromFriends(_ values: NSSet)
 
 }
+
+extension User {
+	var wrappedName: String {
+		name ?? "Unknown"
+	}
+	
+	var wrappedCompany: String {
+		company ?? "Unknown"
+	}
+	
+	var wrappedFriends: Set<Friend> {
+		friends as? Set ?? Set<Friend>()
+	}
+}

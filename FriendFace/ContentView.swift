@@ -19,8 +19,8 @@ struct ContentView: View {
 					ForEach(self.users, id: \.self) { user in
 						NavigationLink(destination: UserDetailView(user: user)) {
 							HStack {
-								Text("\(user.name)")
-								Text("\(user.friends.count) Friends")
+								Text("\(user.wrappedName)")
+								Text("\(user.wrappedFriends.count) Friends")
 									.foregroundColor(.secondary)
 							}
 						}

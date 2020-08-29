@@ -39,3 +39,10 @@ extension Friend {
     @NSManaged public func removeFromUser(_ values: NSSet)
 
 }
+
+extension Friend {
+	
+	var wrappedName: String {
+		name ?? "Unknown"
+	}
+}
