@@ -17,3 +17,5 @@ For a medium-sized challenge, show a little information about their friends righ
 ## Day 61 – Time for Core Data
 
 Expand the app so that it uses Core Data.
+
+Many thanks to [Michael Brünen](https://www.hackingwithswift.com/users/OddMagnet) for his [post](https://www.hackingwithswift.com/forums/100-days-of-swiftui/day-61-my-solution-to-make-core-data-conform-to-codable/2434https://www.hackingwithswift.com/forums/100-days-of-swiftui/day-61-my-solution-to-make-core-data-conform-to-codable/2434) in the [forum](https://www.hackingwithswift.com/forums/100-days-of-swiftui).
