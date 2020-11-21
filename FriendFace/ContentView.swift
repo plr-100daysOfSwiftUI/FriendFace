@@ -22,9 +22,9 @@ struct ContentView: View {
 					List {
 						ForEach(self.users, id: \.self) { user in
 							NavigationLink(destination: UserDetailView(user: user)) {
-								HStack {
+								VStack(alignment: .leading) {
 									Text("\(user.wrappedName)")
-									Text("\(user.wrappedFriends.count) Friends")
+									Text("Age: \(user.wrappedAge)")
 										.foregroundColor(.secondary)
 								}
 							}
