@@ -60,4 +60,8 @@ extension User {
 	var wrappedFriends: Set<Friend> {
 		friends as? Set ?? Set<Friend>()
 	}
+	
+	var wrappedAge: Int {
+		Int(age)
+	}
 }
