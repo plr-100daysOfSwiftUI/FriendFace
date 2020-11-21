@@ -18,8 +18,19 @@ public class User: NSManagedObject, Decodable, Identifiable {
 	}
 	
 	required convenience public init(from decoder: Decoder) throws {
-		self.init()
+		
+		guard let context = decoder.userInfo[CodingUserInfoKey.context!] as? NSManagedObjectContext else {
+			fatalError("Unable to obtain context")
+		}
+		
+		guard let entity = NSEntityDescription.entity(forEntityName: "User", in: context) else {
+			fatalError("Unable to obtain entity")
+		}
+
+		self.init(entity: entity, insertInto: context)
+		
 		let container = try decoder.container(keyedBy: CodingKeys.self)
+		
 		about = try container.decode(String.self, forKey: .about)
 		address = try container.decode(String.self, forKey: .address)
 		age = try container.decode(Int16.self, forKey: .age)

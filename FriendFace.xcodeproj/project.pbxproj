@@ -20,6 +20,7 @@
 		8B7E660F24FAB529007502A1 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7E660D24FAB529007502A1 /* User+CoreDataProperties.swift */; };
 		8BDB951D24F927A90055A909 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BDB951C24F927A90055A909 /* README.md */; };
 		8BDB951F24F929A90055A909 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB951E24F929A90055A909 /* UserDetailView.swift */; };
+		DA534A572569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8B7E660D24FAB529007502A1 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8BDB951C24F927A90055A909 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8BDB951E24F929A90055A909 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-CodingUserInfoKey.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				8B009A7524F8E96B00D4537E /* Preview Content */,
 				8BDB951E24F929A90055A909 /* UserDetailView.swift */,
 				8B7E65EE24FA3654007502A1 /* Model.xcdatamodeld */,
+				DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */,
 			);
 			path = FriendFace;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				8B009A6E24F8E96800D4537E /* AppDelegate.swift in Sources */,
 				8B7E660A24FAB10D007502A1 /* Friend+CoreDataClass.swift in Sources */,
+				DA534A572569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift in Sources */,
 				8B7E65F024FA3654007502A1 /* Model.xcdatamodeld in Sources */,
 				8B009A7024F8E96800D4537E /* SceneDelegate.swift in Sources */,
 				8BDB951F24F929A90055A909 /* UserDetailView.swift in Sources */,
