@@ -12,25 +12,32 @@ struct ContentView: View {
 	@Environment(\.managedObjectContext) var moc
 	@FetchRequest(entity: User.entity(), sortDescriptors: []) var users: FetchedResults<User>
 	
+	@State private var dataLoaded = false
+	
 	var body: some View {
+		
 		NavigationView {
 			VStack {
-				List {
-					ForEach(self.users, id: \.self) { user in
-						NavigationLink(destination: UserDetailView(user: user)) {
-							HStack {
-								Text("\(user.wrappedName)")
-								Text("\(user.wrappedFriends.count) Friends")
-									.foregroundColor(.secondary)
+				if dataLoaded {
+					List {
+						ForEach(self.users, id: \.self) { user in
+							NavigationLink(destination: UserDetailView(user: user)) {
+								HStack {
+									Text("\(user.wrappedName)")
+									Text("\(user.wrappedFriends.count) Friends")
+										.foregroundColor(.secondary)
+								}
 							}
 						}
 					}
+				} else {
+					Button("Load Data") {
+						self.loadData()
+					}
 				}
+				
 			}
 			.navigationBarTitle("Friend Face")
-			.navigationBarItems(trailing: Button("Load") {
-				self.loadData()
-			})
 		}
 	}
 	
