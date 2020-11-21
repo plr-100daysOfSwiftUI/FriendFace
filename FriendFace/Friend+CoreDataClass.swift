@@ -11,7 +11,7 @@ import Foundation
 import CoreData
 
 @objc(Friend)
-public class Friend: NSManagedObject, Decodable {
+public class Friend: NSManagedObject, Decodable, Identifiable {
 	
 	enum CodingKeys: CodingKey {
 		case id, name
