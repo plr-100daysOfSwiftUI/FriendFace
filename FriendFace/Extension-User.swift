@@ -24,4 +24,8 @@ extension User {
 	var wrappedAge: Int {
 		Int(age)
 	}
+	
+	var wrappedRegistered: Date {
+		registered ?? Date()
+	}
 }

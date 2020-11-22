@@ -26,6 +26,7 @@ struct ContentView: View {
 									Text("\(user.wrappedName)")
 									Text("Age: \(user.wrappedAge)")
 										.foregroundColor(.secondary)
+									Text("Date Registered: \(user.wrappedRegistered)")
 								}
 							}
 						}
@@ -53,6 +54,7 @@ struct ContentView: View {
 			let decoder = JSONDecoder()
 			
 			decoder.userInfo[CodingUserInfoKey.context!] = self.moc
+			decoder.dateDecodingStrategy = .iso8601
 			
 			if let _ = try? decoder.decode([User].self, from: data) {
 				if self.moc.hasChanges {
