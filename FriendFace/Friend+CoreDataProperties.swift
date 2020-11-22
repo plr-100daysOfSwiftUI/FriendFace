@@ -40,9 +40,3 @@ extension Friend {
 
 }
 
-extension Friend {
-	
-	var wrappedName: String {
-		name ?? "Unknown"
-	}
-}

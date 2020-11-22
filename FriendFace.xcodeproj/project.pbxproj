@@ -23,6 +23,7 @@
 		DA534A572569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */; };
 		DA534A5B2569E25E00DA56D0 /* Extension-User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A5A2569E25E00DA56D0 /* Extension-User.swift */; };
 		DA534A5E2569E2AD00DA56D0 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A5D2569E2AD00DA56D0 /* User+CoreDataProperties.swift */; };
+		DA534A652569E50800DA56D0 /* Extension-Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A642569E50800DA56D0 /* Extension-Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-CodingUserInfoKey.swift"; sourceTree = "<group>"; };
 		DA534A5A2569E25E00DA56D0 /* Extension-User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-User.swift"; sourceTree = "<group>"; };
 		DA534A5D2569E2AD00DA56D0 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "FriendFace/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DA534A642569E50800DA56D0 /* Extension-Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-Friend.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				8B7E65EE24FA3654007502A1 /* Model.xcdatamodeld */,
 				DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */,
 				DA534A5A2569E25E00DA56D0 /* Extension-User.swift */,
+				DA534A642569E50800DA56D0 /* Extension-Friend.swift */,
 			);
 			path = FriendFace;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				DA534A5B2569E25E00DA56D0 /* Extension-User.swift in Sources */,
 				8BDB951F24F929A90055A909 /* UserDetailView.swift in Sources */,
 				8B009A7224F8E96800D4537E /* ContentView.swift in Sources */,
+				DA534A652569E50800DA56D0 /* Extension-Friend.swift in Sources */,
 				8B7E660E24FAB529007502A1 /* User+CoreDataClass.swift in Sources */,
 				8B7E660B24FAB10D007502A1 /* Friend+CoreDataProperties.swift in Sources */,
 				8B7E660F24FAB529007502A1 /* User+CoreDataProperties.swift in Sources */,
