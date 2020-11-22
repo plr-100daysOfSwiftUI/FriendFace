@@ -48,20 +48,4 @@ extension User {
 
 }
 
-extension User {
-	var wrappedName: String {
-		name ?? "Unknown"
-	}
-	
-	var wrappedCompany: String {
-		company ?? "Unknown"
-	}
-	
-	var wrappedFriends: Set<Friend> {
-		friends as? Set ?? Set<Friend>()
-	}
-	
-	var wrappedAge: Int {
-		Int(age)
-	}
 }
