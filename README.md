@@ -1,5 +1,5 @@
 # FriendFace
-[100 Days of SwiftUI - Day 60: Challenge](https://www.hackingwithswift.com/guide/ios-swiftui/5/3/challenge)
+[100 Days of SwiftUI - Day 60: Challenge](https://www.hackingwithswift.com/guide/ios-swiftui/5/3/challenge)  
 [100 Days of SwiftUI - Day 61: Challenge](https://www.hackingwithswift.com/100/swiftui/61)
 
 Use URLSession to download some JSON from the internet, use Codable to convert it to Swift types, then use NavigationView, List, and more to display it to the user.
