@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
 	@Environment(\.managedObjectContext) var moc
-	@FetchRequest(entity: User.entity(), sortDescriptors: []) var users: FetchedResults<User>
+	@FetchRequest(entity: User.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \User.name, ascending: true)]) var users: FetchedResults<User>
 	
 	@State private var dataLoaded = false
 	
