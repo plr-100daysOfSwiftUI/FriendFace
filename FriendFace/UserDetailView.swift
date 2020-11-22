@@ -26,7 +26,7 @@ struct UserDetailView: View {
 			
 			Section(header: Text("\(user.wrappedFriends.count) friends")) {
 				List {
-					ForEach(Array(user.wrappedFriends), id: \.self) { friend in
+					ForEach(Array(user.wrappedFriends)) { friend in
 						Text("\(friend.wrappedName)")
 					}
 				}
