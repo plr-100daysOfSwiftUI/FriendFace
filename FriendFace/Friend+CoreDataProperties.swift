@@ -40,3 +40,6 @@ extension Friend {
 
 }
 
+extension Friend: Identifiable {
+	
+}
