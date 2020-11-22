@@ -25,7 +25,13 @@ extension User {
 		Int(age)
 	}
 	
-	var wrappedRegistered: Date {
-		registered ?? Date()
+	var shortFormatRegistered: String {
+		if let date = registered {
+			let formatter = DateFormatter()
+			formatter.dateStyle = .short
+			return formatter.string(from: date)
+		} else {
+			return "N/A"
+		}
 	}
 }

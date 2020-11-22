@@ -26,7 +26,7 @@ struct ContentView: View {
 									Text("\(user.wrappedName)")
 									Text("Age: \(user.wrappedAge)")
 										.foregroundColor(.secondary)
-									Text("Date Registered: \(user.wrappedRegistered)")
+									Text("Date Registered: \(user.shortFormatRegistered)")
 								}
 							}
 						}
