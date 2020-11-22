@@ -23,6 +23,7 @@
 		DA534A572569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */; };
 		DA534A5B2569E25E00DA56D0 /* Extension-User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A5A2569E25E00DA56D0 /* Extension-User.swift */; };
 		DA534A722569E9B800DA56D0 /* Extension-Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A712569E9B800DA56D0 /* Extension-Friend.swift */; };
+		DA534A79256A10D200DA56D0 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A78256A10D200DA56D0 /* FriendDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-CodingUserInfoKey.swift"; sourceTree = "<group>"; };
 		DA534A5A2569E25E00DA56D0 /* Extension-User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-User.swift"; sourceTree = "<group>"; };
 		DA534A712569E9B800DA56D0 /* Extension-Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension-Friend.swift"; sourceTree = "<group>"; };
+		DA534A78256A10D200DA56D0 /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				8B7E660C24FAB529007502A1 /* User+CoreDataClass.swift */,
 				8B7E660D24FAB529007502A1 /* User+CoreDataProperties.swift */,
 				8BDB951E24F929A90055A909 /* UserDetailView.swift */,
+				DA534A78256A10D200DA56D0 /* FriendDetailView.swift */,
 				8B009A7324F8E96B00D4537E /* Assets.xcassets */,
 				8B009A7824F8E96B00D4537E /* LaunchScreen.storyboard */,
 				8B7E65EE24FA3654007502A1 /* Model.xcdatamodeld */,
@@ -187,6 +190,7 @@
 				8B009A7224F8E96800D4537E /* ContentView.swift in Sources */,
 				8B7E660E24FAB529007502A1 /* User+CoreDataClass.swift in Sources */,
 				8B7E660B24FAB10D007502A1 /* Friend+CoreDataProperties.swift in Sources */,
+				DA534A79256A10D200DA56D0 /* FriendDetailView.swift in Sources */,
 				8B7E660F24FAB529007502A1 /* User+CoreDataProperties.swift in Sources */,
 				DA534A722569E9B800DA56D0 /* Extension-Friend.swift in Sources */,
 			);
