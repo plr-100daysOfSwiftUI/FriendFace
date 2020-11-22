@@ -25,6 +25,11 @@ extension User {
 		Int(age)
 	}
 	
+	var wrappedTags: String {
+		let array = tags as? NSArray as! [String]
+		return array.joined(separator: ", ")
+	}
+	
 	var shortFormatRegistered: String {
 		if let date = registered {
 			let formatter = DateFormatter()
