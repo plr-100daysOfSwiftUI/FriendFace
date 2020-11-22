@@ -2,7 +2,7 @@
 //  Friend+CoreDataProperties.swift
 //  FriendFace
 //
-//  Created by Paul Richardson on 29.08.2020.
+//  Created by Paul Richardson on 22/11/2020.
 //  Copyright © 2020 Paul Richardson. All rights reserved.
 //
 //
@@ -19,27 +19,27 @@ extension Friend {
 
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
-    @NSManaged public var user: NSSet?
+    @NSManaged public var users: NSSet?
 
 }
 
-// MARK: Generated accessors for user
+// MARK: Generated accessors for users
 extension Friend {
 
-    @objc(addUserObject:)
-    @NSManaged public func addToUser(_ value: User)
+    @objc(addUsersObject:)
+    @NSManaged public func addToUsers(_ value: User)
 
-    @objc(removeUserObject:)
-    @NSManaged public func removeFromUser(_ value: User)
+    @objc(removeUsersObject:)
+    @NSManaged public func removeFromUsers(_ value: User)
 
-    @objc(addUser:)
-    @NSManaged public func addToUser(_ values: NSSet)
+    @objc(addUsers:)
+    @NSManaged public func addToUsers(_ values: NSSet)
 
-    @objc(removeUser:)
-    @NSManaged public func removeFromUser(_ values: NSSet)
+    @objc(removeUsers:)
+    @NSManaged public func removeFromUsers(_ values: NSSet)
 
 }
 
-extension Friend: Identifiable {
-	
+extension Friend : Identifiable {
+
 }

@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  FriendFace
 //
-//  Created by Paul Richardson on 29.08.2020.
+//  Created by Paul Richardson on 22/11/2020.
 //  Copyright © 2020 Paul Richardson. All rights reserved.
 //
 //
@@ -25,8 +25,8 @@ extension User {
     @NSManaged public var id: UUID?
     @NSManaged public var isActive: Bool
     @NSManaged public var name: String?
-    @NSManaged public var tags: NSObject?
     @NSManaged public var registered: Date?
+    @NSManaged public var tags: NSObject?
     @NSManaged public var friends: NSSet?
 
 }
