@@ -22,8 +22,7 @@
 		8BDB951F24F929A90055A909 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB951E24F929A90055A909 /* UserDetailView.swift */; };
 		DA534A572569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */; };
 		DA534A5B2569E25E00DA56D0 /* Extension-User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A5A2569E25E00DA56D0 /* Extension-User.swift */; };
-		DA534A5E2569E2AD00DA56D0 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A5D2569E2AD00DA56D0 /* User+CoreDataProperties.swift */; };
-		DA534A652569E50800DA56D0 /* Extension-Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A642569E50800DA56D0 /* Extension-Friend.swift */; };
+		DA534A722569E9B800DA56D0 /* Extension-Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA534A712569E9B800DA56D0 /* Extension-Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +43,7 @@
 		8BDB951E24F929A90055A909 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-CodingUserInfoKey.swift"; sourceTree = "<group>"; };
 		DA534A5A2569E25E00DA56D0 /* Extension-User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-User.swift"; sourceTree = "<group>"; };
-		DA534A5D2569E2AD00DA56D0 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "FriendFace/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DA534A642569E50800DA56D0 /* Extension-Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-Friend.swift"; sourceTree = SOURCE_ROOT; };
+		DA534A712569E9B800DA56D0 /* Extension-Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension-Friend.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 		8B009A6124F8E96800D4537E = {
 			isa = PBXGroup;
 			children = (
-				DA534A5D2569E2AD00DA56D0 /* User+CoreDataProperties.swift */,
 				8BDB951C24F927A90055A909 /* README.md */,
 				8B009A6C24F8E96800D4537E /* FriendFace */,
 				8B009A6B24F8E96800D4537E /* Products */,
@@ -80,22 +77,22 @@
 		8B009A6C24F8E96800D4537E /* FriendFace */ = {
 			isa = PBXGroup;
 			children = (
-				8B7E660C24FAB529007502A1 /* User+CoreDataClass.swift */,
-				8B7E660D24FAB529007502A1 /* User+CoreDataProperties.swift */,
+				8B009A7B24F8E96B00D4537E /* Info.plist */,
+				8B009A6D24F8E96800D4537E /* AppDelegate.swift */,
+				8B009A7124F8E96800D4537E /* ContentView.swift */,
+				DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */,
+				DA534A712569E9B800DA56D0 /* Extension-Friend.swift */,
+				DA534A5A2569E25E00DA56D0 /* Extension-User.swift */,
 				8B7E660824FAB10D007502A1 /* Friend+CoreDataClass.swift */,
 				8B7E660924FAB10D007502A1 /* Friend+CoreDataProperties.swift */,
-				8B009A6D24F8E96800D4537E /* AppDelegate.swift */,
 				8B009A6F24F8E96800D4537E /* SceneDelegate.swift */,
-				8B009A7124F8E96800D4537E /* ContentView.swift */,
+				8B7E660C24FAB529007502A1 /* User+CoreDataClass.swift */,
+				8B7E660D24FAB529007502A1 /* User+CoreDataProperties.swift */,
+				8BDB951E24F929A90055A909 /* UserDetailView.swift */,
 				8B009A7324F8E96B00D4537E /* Assets.xcassets */,
 				8B009A7824F8E96B00D4537E /* LaunchScreen.storyboard */,
-				8B009A7B24F8E96B00D4537E /* Info.plist */,
-				8B009A7524F8E96B00D4537E /* Preview Content */,
-				8BDB951E24F929A90055A909 /* UserDetailView.swift */,
 				8B7E65EE24FA3654007502A1 /* Model.xcdatamodeld */,
-				DA534A562569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift */,
-				DA534A5A2569E25E00DA56D0 /* Extension-User.swift */,
-				DA534A642569E50800DA56D0 /* Extension-Friend.swift */,
+				8B009A7524F8E96B00D4537E /* Preview Content */,
 			);
 			path = FriendFace;
 			sourceTree = "<group>";
@@ -182,17 +179,16 @@
 			files = (
 				8B009A6E24F8E96800D4537E /* AppDelegate.swift in Sources */,
 				8B7E660A24FAB10D007502A1 /* Friend+CoreDataClass.swift in Sources */,
-				DA534A5E2569E2AD00DA56D0 /* User+CoreDataProperties.swift in Sources */,
 				DA534A572569D7DE00DA56D0 /* Extension-CodingUserInfoKey.swift in Sources */,
 				8B7E65F024FA3654007502A1 /* Model.xcdatamodeld in Sources */,
 				8B009A7024F8E96800D4537E /* SceneDelegate.swift in Sources */,
 				DA534A5B2569E25E00DA56D0 /* Extension-User.swift in Sources */,
 				8BDB951F24F929A90055A909 /* UserDetailView.swift in Sources */,
 				8B009A7224F8E96800D4537E /* ContentView.swift in Sources */,
-				DA534A652569E50800DA56D0 /* Extension-Friend.swift in Sources */,
 				8B7E660E24FAB529007502A1 /* User+CoreDataClass.swift in Sources */,
 				8B7E660B24FAB10D007502A1 /* Friend+CoreDataProperties.swift in Sources */,
 				8B7E660F24FAB529007502A1 /* User+CoreDataProperties.swift in Sources */,
+				DA534A722569E9B800DA56D0 /* Extension-Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
