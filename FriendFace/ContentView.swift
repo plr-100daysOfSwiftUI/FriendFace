@@ -18,15 +18,17 @@ struct ContentView: View {
 		
 		NavigationView {
 			VStack {
-				if dataLoaded {
+				if dataLoaded || !users.isEmpty {
 					List {
 						ForEach(self.users, id: \.self) { user in
 							NavigationLink(destination: UserDetailView(user: user)) {
 								VStack(alignment: .leading) {
 									Text("\(user.wrappedName)")
-									Text("Age: \(user.wrappedAge)")
-										.foregroundColor(.secondary)
-									Text("Date Registered: \(user.shortFormatRegistered)")
+									Group {
+										Text("Age: \(user.wrappedAge)")
+										Text("Date Registered: \(user.shortFormatRegistered)")
+									}
+									.foregroundColor(.secondary)
 								}
 							}
 						}
