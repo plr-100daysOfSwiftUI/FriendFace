@@ -29,7 +29,6 @@ struct UserDetailView: View {
 			Section(header: Text("\(user.wrappedFriends.count) friends")) {
 				List {
 					ForEach(Array(user.wrappedFriends)) { friend in
-//						let user =
 						NavigationLink(destination: FriendDetailView(friend: friend)) {
 								Text("\(friend.wrappedName)")
 						}
