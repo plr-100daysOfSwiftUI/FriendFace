@@ -11,7 +11,7 @@ import Foundation
 import CoreData
 
 @objc(User)
-public class User: NSManagedObject, Decodable, Identifiable {
+public class User: NSManagedObject, Decodable {
 	
 	enum CodingKeys: CodingKey {
 		case about, address, age, company, email, id, isActive, name, registered, tags, friends
