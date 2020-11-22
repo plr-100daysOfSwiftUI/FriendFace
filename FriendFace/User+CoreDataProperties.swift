@@ -25,8 +25,8 @@ extension User {
     @NSManaged public var id: UUID?
     @NSManaged public var isActive: Bool
     @NSManaged public var name: String?
-    @NSManaged public var registered: String?
     @NSManaged public var tags: NSObject?
+    @NSManaged public var registered: Date?
     @NSManaged public var friends: NSSet?
 
 }
