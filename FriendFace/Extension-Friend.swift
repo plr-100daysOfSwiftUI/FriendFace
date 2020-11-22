@@ -12,4 +12,8 @@ extension Friend {
 	var wrappedName: String {
 		name ?? "Unknown"
 	}
+	
+	var friendCount: Int {
+		users?.count ?? 0
+	}
 }

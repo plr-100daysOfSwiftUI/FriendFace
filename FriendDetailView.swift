@@ -13,7 +13,7 @@ struct FriendDetailView: View {
 	let friend: Friend
 	
 	var body: some View {
-		Text("Hello, \(friend.wrappedName)")
+		Text("\(friend.wrappedName) has \(friend.friendCount) friends.")
 	}
 }
 
