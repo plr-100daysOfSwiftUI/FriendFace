@@ -21,6 +21,8 @@ struct UserDetailView: View {
 					.font(.largeTitle)
 				Text("Aged \(user.age), works for \(user.wrappedCompany)")
 					.font(.headline)
+				Text(user.wrappedTags)
+					.foregroundColor(.secondary)
 			}
 			.padding()
 			
